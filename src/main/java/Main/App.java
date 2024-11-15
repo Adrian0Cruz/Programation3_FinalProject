@@ -17,7 +17,7 @@ public class App extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        scene = new Scene(loadFXML("/View/Primary"), 640, 480); // Ajusta la ruta aquí
+        scene = new Scene(loadFXML("/View/Register"), 994, 663); // Ajusta la ruta aquí
         stage.setScene(scene);
         stage.show();
     }
