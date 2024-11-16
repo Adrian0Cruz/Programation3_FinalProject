@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LogInController">
+    <stylesheets>
+        <URL value="@/styles/login.css"/>
+    </stylesheets>
+    <children>
+        <ImageView fitHeight="663.0" fitWidth="994.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Sources/login_image.jpg" />
+            </image>
+        </ImageView>
+        <Pane id="Pane" layoutX="272.0" layoutY="106.0" prefHeight="450.0" prefWidth="450.0" styleClass="mainPane" stylesheets="@/styles/login.css">
+            <children>
+                <Button fx:id="registerButton" layoutX="54.0" layoutY="332.0" prefWidth="342" stylesheets="@/styles/login.css" text="Iniciar Seción" />
+                <Label id="titleLabel" layoutX="148.0" layoutY="28.0" style="-fx-background-position: center;" styleClass="titleLabel" stylesheets="@../styles/SignIn.css" text="Iniciar Seción" />
+                <Label layoutX="139.0" layoutY="63.0" styleClass="subTitleLabel" stylesheets="@../styles/SignIn.css" text="Vuelve a tu espacio favorito" />
+                <Label layoutX="61.0" layoutY="127.0" stylesheets="@../styles/SignIn.css" text="Correo Electronico" />
+                <Label layoutX="61.0" layoutY="225.0" stylesheets="@../styles/SignIn.css" text="Contraseña" />
+                <Label layoutX="172.0" layoutY="395.0" styleClass="termsLabel" stylesheets="@../styles/SignIn.css" text="¿No eres cliente?" />
+                <Label layoutX="190.0" layoutY="415.0" styleClass="boldLabel" stylesheets="@../styles/SignIn.css" text="Regístrate" />
+                <TextField fx:id="emailField" layoutX="54.0" layoutY="158.0" promptText="Escribe tu correo" stylesheets="@../styles/SignIn.css" />
+                <TextField fx:id="passwordField" layoutX="54.0" layoutY="256.0" promptText="Escribe tu contraseña" stylesheets="@../styles/SignIn.css" />
+            </children>
+        </Pane>
+    </children>
+</AnchorPane>

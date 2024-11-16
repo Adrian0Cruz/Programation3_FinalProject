@@ -1,0 +1,72 @@
+.mainFxmlClass {
+    -fx-background-color: white;
+    -fx-border-color: black;
+    -fx-border-width: 2px;
+}
+
+#Pane {
+    -fx-background-color: rgb(255, 255, 255);
+    -fx-padding: 20px;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+    -fx-alignment: center; /* Para centrar el panel en la imagen */
+}
+
+.titleLabel {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #333;
+    -fx-alignment: center;
+}
+
+.subTitleLabel {
+    -fx-font-size: 14px; /* Tamaño de fuente más pequeño */
+    -fx-font-weight: normal; /* Sin negrita */
+    -fx-text-fill: #333;
+    -fx-alignment: center;
+    -fx-wrap-text: true; /* Para asegurarse de que el texto no se salga del panel */
+}
+
+.termsLabel {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-wrap-text: true; /* Asegura que el texto se ajuste dentro del Label */
+}
+
+.boldLabel {
+    -fx-font-weight: bold; /* Negrita para "Términos y Condiciones." */
+}
+
+.centeredLabel {
+    -fx-text-align: center; /* Centra el texto */
+}
+
+Label {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+}
+
+TextField {
+    -fx-font-size: 14px;
+    -fx-text-fill: #333;
+    -fx-border-color: #ccc;
+    -fx-background-color: #fff;
+    -fx-background-radius: 10px; /* Bordes redondeados */
+    -fx-pref-height: 32px;
+}
+
+TextField#firstNameField, TextField#lastNameField {
+    -fx-pref-width: 180px;
+}
+
+TextField#idField, TextField#emailField, TextField#passwordField {
+    -fx-pref-width: 342px;
+}
+
+Button {
+    -fx-background-color: #000000; /* Color negro para el botón de registro */
+    -fx-text-fill: white;
+    -fx-background-radius: 5px;
+    -fx-padding: 10px 20px;
+    -fx-pref-width: 342px;
+}

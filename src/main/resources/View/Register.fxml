@@ -35,7 +35,7 @@
                 <TextField fx:id="firstNameField" layoutX="50" layoutY="130" prefWidth="180" promptText="First Name" stylesheets="@../styles/Register.css" />
                 <TextField fx:id="lastNameField" layoutX="242.0" layoutY="130.0" prefWidth="180" promptText="Last Name" stylesheets="@../styles/Register.css" />
                 <TextField fx:id="idField" layoutX="50" layoutY="220" promptText="Cédula" stylesheets="@../styles/Register.css" />
-                <TextField fx:id="emailField" layoutX="50" layoutY="290" promptText="Escribe tu correo" stylesheets="@../styles/Register.css" />
+                <TextField id="passwordField" fx:id="emailField" layoutX="50" layoutY="290" promptText="Escribe tu correo" stylesheets="@../styles/Register.css" />
                 <TextField fx:id="passwordField" layoutX="50" layoutY="360" promptText="Escribe una contraseña" stylesheets="@../styles/Register.css" />
             </children>
         </Pane>
