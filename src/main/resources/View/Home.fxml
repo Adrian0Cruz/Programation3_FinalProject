@@ -1,14 +1,103 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
+<AnchorPane id="AnchorPane" prefHeight="664.0" prefWidth="993.0" styleClass="mainFxmlClass" stylesheets="@../styles/Home.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.HomeController">
     <stylesheets>
-        <URL value="@/styles/home.css"/>
+        <URL value="@../styles/Home.css" />
     </stylesheets>
+    <children>
+        <ImageView fitHeight="664.0" fitWidth="994.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../Sources/landing_image.jpg" />
+            </image>
+        </ImageView>
+        <Label layoutX="47.0" layoutY="278.0" styleClass="heroText" stylesheets="@../styles/Home.css" text="Descubre El Mejor" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="36.0" />
+            </font>
+        </Label>
+        <Label layoutX="47.0" layoutY="305.0" styleClass="heroText" stylesheets="@../styles/Home.css" text="Servicio De Hosteleria" textFill="WHITE">
+            <font>
+                <Font name="System Bold Italic" size="36.0" />
+            </font>
+        </Label>
+        <AnchorPane layoutY="408.0" prefHeight="256.0" prefWidth="994.0" styleClass="bookingSectionNotRounded" stylesheets="@../styles/Home.css">
+            <children>
+                <Pane layoutX="97.0" layoutY="28.0" prefHeight="200.0" prefWidth="800.0" styleClass="bookingPaneRounded" stylesheets="@../styles/Home.css">
+                    <children>
+                        <Button layoutX="586.0" layoutY="117.0" mnemonicParsing="false" onAction="#switchToLogIn" prefHeight="50.0" prefWidth="200.0" styleClass="bookingButton" stylesheets="@../styles/Home.css" text="INICIA SESIÓN" textFill="WHITE">
+                            <font>
+                                <Font name="System Bold" size="24.0" />
+                            </font>
+                        </Button>
+                        <Label layoutX="282.0" layoutY="14.0" styleClass="bookingTitle" stylesheets="@../styles/Home.css" text="Aparta tú habitación">
+                            <font>
+                                <Font name="System Bold Italic" size="24.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="283.0" layoutY="49.0" styleClass="bookingSubtitle" stylesheets="@../styles/Home.css" text="Descubre el espacio perfecto para ti">
+                            <font>
+                                <Font name="System Bold Italic" size="14.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="90.0" styleClass="bookingLabel" stylesheets="@../styles/Home.css" text="Date">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                        <Label layoutX="254.0" layoutY="90.0" styleClass="bookingLabel" stylesheets="@../styles/Home.css" text="Person">
+                            <font>
+                                <Font name="System Bold Italic" size="18.0" />
+                            </font>
+                        </Label>
+                        <Pane layoutX="14.0" layoutY="117.0" prefHeight="50.0" prefWidth="200.0" styleClass="bookingFieldRounded" stylesheets="@../styles/Home.css">
+                            <children>
+                                <Label layoutX="33.0" layoutY="11.0" styleClass="bookingLabel" stylesheets="@../styles/Home.css" text="Check Available">
+                                    <font>
+                                        <Font name="System Bold Italic" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </Pane>
+                        <Pane layoutX="254.0" layoutY="117.0" prefHeight="50.0" prefWidth="300.0" styleClass="bookingFieldRounded" stylesheets="@../styles/Home.css">
+                            <children>
+                                <Label layoutX="52.0" layoutY="12.0" styleClass="bookingLabel" stylesheets="@../styles/Home.css" text="Adults">
+                                    <font>
+                                        <Font name="System Bold Italic" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Label layoutX="166.0" layoutY="12.0" styleClass="bookingLabel" stylesheets="@../styles/Home.css" text="Children">
+                                    <font>
+                                        <Font name="System Bold Italic" size="18.0" />
+                                    </font>
+                                </Label>
+                                <Spinner fx:id="spinnerAdults" editable="true" layoutX="108.0" layoutY="9.0" prefHeight="32.0" prefWidth="60.0" styleClass="bookingSpinner" stylesheets="@../styles/Home.css" />
+                                <Spinner fx:id="spinnerChildren" editable="true" layoutX="238.0" layoutY="9.0" prefHeight="32.0" prefWidth="60.0" styleClass="bookingSpinner" stylesheets="@../styles/Home.css" />
+
+                            </children>
+                        </Pane>
+                    </children>
+                </Pane>
+            </children>
+        </AnchorPane>
+        <Pane layoutX="47.0" layoutY="14.0" prefHeight="128.0" prefWidth="900.0" styleClass="navigationBar" stylesheets="@../styles/Home.css">
+            <children>
+                <Label layoutX="50.0" layoutY="50.0" styleClass="navLabel" stylesheets="@../styles/Home.css" text="Home" />
+                <Label layoutX="150.0" layoutY="50.0" styleClass="navLabel" stylesheets="@../styles/Home.css" text="About Us" />
+                <Label layoutX="300.0" layoutY="50.0" styleClass="navLabel" stylesheets="@../styles/Home.css" text="Newsletter" />
+                <Label layoutX="450.0" layoutY="50.0" styleClass="navLabel" stylesheets="@../styles/Home.css" text="Rooms" />
+                <Label layoutX="600.0" layoutY="50.0" styleClass="navLabel" stylesheets="@../styles/Home.css" text="Services" />
+                <Label layoutX="750.0" layoutY="50.0" styleClass="navLabel" stylesheets="@../styles/Home.css" text="Pricing" />
+            </children>
+        </Pane>
+    </children>
 </AnchorPane>

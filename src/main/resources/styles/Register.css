@@ -9,7 +9,20 @@
     -fx-padding: 20px;
     -fx-border-radius: 10px;
     -fx-background-radius: 10px;
-    -fx-alignment: center; /* Para centrar el panel en la imagen */
+    -fx-alignment: center;
+}
+
+.backPane {
+    -fx-background-color: rgba(0, 0, 0, 0.7);
+    -fx-border-radius: 0px 20px 20px 0px; /* Bordes redondeados en la esquina superior derecha */
+    -fx-background-radius: 0px 20px 20px 0px;
+}
+
+.backButton {
+    -fx-background-color: white;
+    -fx-text-fill: black;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
 }
 
 .titleLabel {
@@ -20,25 +33,28 @@
 }
 
 .subTitleLabel {
-    -fx-font-size: 14px; /* Tamaño de fuente más pequeño */
-    -fx-font-weight: normal; /* Sin negrita */
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
     -fx-text-fill: #333;
     -fx-alignment: center;
-    -fx-wrap-text: true; /* Para asegurarse de que el texto no se salga del panel */
+    -fx-wrap-text: true;
+    -fx-text-align: center;
+    -fx-layout-x: 0;
+    -fx-pref-width: 450;
 }
 
 .termsLabel {
     -fx-font-size: 14px;
     -fx-text-fill: #333;
-    -fx-wrap-text: true; /* Asegura que el texto se ajuste dentro del Label */
+    -fx-wrap-text: true;
 }
 
 .boldLabel {
-    -fx-font-weight: bold; /* Negrita para "Términos y Condiciones." */
+    -fx-font-weight: bold;
 }
 
 .centeredLabel {
-    -fx-text-align: center; /* Centra el texto */
+    -fx-text-align: center;
 }
 
 Label {
@@ -51,7 +67,7 @@ TextField {
     -fx-text-fill: #333;
     -fx-border-color: #ccc;
     -fx-background-color: #fff;
-    -fx-background-radius: 10px; /* Bordes redondeados */
+    -fx-background-radius: 10px;
     -fx-pref-height: 32px;
 }
 
@@ -63,8 +79,8 @@ TextField#idField, TextField#emailField, TextField#passwordField {
     -fx-pref-width: 342px;
 }
 
-Button {
-    -fx-background-color: #000000; /* Color negro para el botón de registro */
+.Button {
+    -fx-background-color: #000000;
     -fx-text-fill: white;
     -fx-background-radius: 5px;
     -fx-padding: 10px 20px;

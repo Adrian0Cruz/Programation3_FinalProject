@@ -9,34 +9,39 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane id="AnchorPane" prefHeight="663.0" prefWidth="994.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
+<AnchorPane id="AnchorPane" prefHeight="663.0" prefWidth="994.0" styleClass="mainFxmlClass" stylesheets="@../styles/Register.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RegisterController">
     <stylesheets>
-        <URL value="@/styles/Register.css" />
+        <URL value="@../styles/Register.css" />
     </stylesheets>
     <children>
-        <ImageView fitHeight="663.0" fitWidth="994.0" pickOnBounds="true" preserveRatio="true">
-         <image>
-            <Image url="@../Sources/reg_image.jpg" />
-         </image>
+        <ImageView fitHeight="663.0" fitWidth="994.0" pickOnBounds="true" preserveRatio="false" smooth="true">
+            <image>
+                <Image url="@../Sources/reg_image.jpg" />
+            </image>
         </ImageView>
-        <Pane id="Pane" layoutX="272.0" layoutY="82.0" prefHeight="550.0" prefWidth="450.0" styleClass="mainPane" stylesheets="@../styles/Register.css">
+        <Pane layoutY="14.0" prefHeight="50.0" prefWidth="100.0" styleClass="backPane">
             <children>
-                <Button fx:id="registerButton" layoutX="50" layoutY="420" prefWidth="342" stylesheets="@../styles/Register.css" text="Registrarse" />
-                <Label id="titleLabel" layoutX="199.0" layoutY="23.0" style="-fx-background-position: center;" styleClass="titleLabel" stylesheets="@../styles/Register.css" text="Registro" />
-                <Label layoutX="94.0" layoutY="59.0" styleClass="subTitleLabel" stylesheets="@../styles/Register.css" text="Haz parte de la familia hotelera con más calidad" />
-                <Label layoutX="50" layoutY="100" stylesheets="@../styles/Register.css" text="Nombre(s)" />
-                <Label layoutX="252.0" layoutY="100.0" stylesheets="@../styles/Register.css" text="Apellidos" />
-                <Label layoutX="50.0" layoutY="190.0" stylesheets="@../styles/Register.css" text="Identificación" />
-                <Label layoutX="50" layoutY="260.0" stylesheets="@../styles/Register.css" text="Email" />
-                <Label layoutX="50" layoutY="330.0" stylesheets="@../styles/Register.css" text="Password" />
-                <Label layoutX="28.0" layoutY="476.0" styleClass="termsLabel" stylesheets="@../styles/Register.css" text="Al registrarte, estás aceptando nuestros" />
-                <Label layoutX="272.0" layoutY="477.0" styleClass="boldLabel" stylesheets="@../styles/Register.css" text="Términos y Condiciones." />
-                <Label layoutX="138.0" layoutY="497.0" styleClass="termsLabel centeredLabel" stylesheets="@../styles/Register.css" text="Si estás de acuerdo, ¡bienvenido!" />
-                <TextField fx:id="firstNameField" layoutX="50" layoutY="130" prefWidth="180" promptText="First Name" stylesheets="@../styles/Register.css" />
-                <TextField fx:id="lastNameField" layoutX="242.0" layoutY="130.0" prefWidth="180" promptText="Last Name" stylesheets="@../styles/Register.css" />
-                <TextField fx:id="idField" layoutX="50" layoutY="220" promptText="Cédula" stylesheets="@../styles/Register.css" />
-                <TextField id="passwordField" fx:id="emailField" layoutX="50" layoutY="290" promptText="Escribe tu correo" stylesheets="@../styles/Register.css" />
-                <TextField fx:id="passwordField" layoutX="50" layoutY="360" promptText="Escribe una contraseña" stylesheets="@../styles/Register.css" />
+                <Button layoutX="29.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToLogIn" styleClass="backButton" text="Back" />
+            </children>
+        </Pane>
+        <Pane id="Pane" layoutX="272.0" layoutY="82.0" prefHeight="550.0" prefWidth="450.0" styleClass="mainPane">
+            <children>
+                <Button fx:id="registerButton" layoutX="50" layoutY="420" prefWidth="342" styleClass="Button" text="Registrarse" />
+                <Label id="titleLabel" layoutX="174.0" layoutY="23.0" style="-fx-background-position: center;" styleClass="titleLabel" text="Registro" />
+                <Label layoutX="5.0" layoutY="58.0" styleClass="subTitleLabel" text="Haz parte de la familia hotelera con más calidad" />
+                <Label layoutX="50" layoutY="100" text="Nombre(s)" />
+                <Label layoutX="252.0" layoutY="100.0" text="Apellidos" />
+                <Label layoutX="50.0" layoutY="190.0" text="Identificación" />
+                <Label layoutX="50" layoutY="260.0" text="Email" />
+                <Label layoutX="50" layoutY="330.0" text="Password" />
+                <Label layoutX="28.0" layoutY="476.0" styleClass="termsLabel" text="Al registrarte, estás aceptando nuestros" />
+                <Label layoutX="272.0" layoutY="477.0" styleClass="boldLabel" text="Términos y Condiciones." />
+                <Label layoutX="138.0" layoutY="497.0" styleClass="termsLabel centeredLabel" text="Si estás de acuerdo, ¡bienvenido!" />
+                <TextField fx:id="firstNameField" layoutX="50" layoutY="130" prefWidth="180" promptText="First Name" />
+                <TextField fx:id="lastNameField" layoutX="242.0" layoutY="130.0" prefWidth="180" promptText="Last Name" />
+                <TextField fx:id="idField" layoutX="50" layoutY="220" promptText="Cédula" />
+                <TextField id="passwordField" fx:id="emailField" layoutX="50" layoutY="290" promptText="Escribe tu correo" />
+                <TextField fx:id="passwordField" layoutX="50" layoutY="360" promptText="Escribe una contraseña" />
             </children>
         </Pane>
     </children>

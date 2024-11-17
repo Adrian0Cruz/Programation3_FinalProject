@@ -9,27 +9,33 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LogInController">
+<AnchorPane id="AnchorPane" prefHeight="663.0" prefWidth="994.0" styleClass="mainFxmlClass" stylesheets="@../styles/LogIn.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.LogInController">
     <stylesheets>
-        <URL value="@/styles/login.css"/>
+        <URL value="@../styles/LogIn.css" />
     </stylesheets>
     <children>
-        <ImageView fitHeight="663.0" fitWidth="994.0" pickOnBounds="true" preserveRatio="true">
+        <ImageView fitHeight="663.0" fitWidth="994.0" pickOnBounds="true" preserveRatio="false" smooth="true">
             <image>
                 <Image url="@../Sources/login_image.jpg" />
             </image>
         </ImageView>
-        <Pane id="Pane" layoutX="272.0" layoutY="106.0" prefHeight="450.0" prefWidth="450.0" styleClass="mainPane" stylesheets="@/styles/login.css">
+        <Pane layoutY="14.0" prefHeight="50.0" prefWidth="100.0" styleClass="backPane">
             <children>
-                <Button fx:id="registerButton" layoutX="54.0" layoutY="332.0" prefWidth="342" stylesheets="@/styles/login.css" text="Iniciar Seción" />
-                <Label id="titleLabel" layoutX="148.0" layoutY="28.0" style="-fx-background-position: center;" styleClass="titleLabel" stylesheets="@../styles/SignIn.css" text="Iniciar Seción" />
-                <Label layoutX="139.0" layoutY="63.0" styleClass="subTitleLabel" stylesheets="@../styles/SignIn.css" text="Vuelve a tu espacio favorito" />
-                <Label layoutX="61.0" layoutY="127.0" stylesheets="@../styles/SignIn.css" text="Correo Electronico" />
-                <Label layoutX="61.0" layoutY="225.0" stylesheets="@../styles/SignIn.css" text="Contraseña" />
-                <Label layoutX="172.0" layoutY="395.0" styleClass="termsLabel" stylesheets="@../styles/SignIn.css" text="¿No eres cliente?" />
-                <Label layoutX="190.0" layoutY="415.0" styleClass="boldLabel" stylesheets="@../styles/SignIn.css" text="Regístrate" />
-                <TextField fx:id="emailField" layoutX="54.0" layoutY="158.0" promptText="Escribe tu correo" stylesheets="@../styles/SignIn.css" />
-                <TextField fx:id="passwordField" layoutX="54.0" layoutY="256.0" promptText="Escribe tu contraseña" stylesheets="@../styles/SignIn.css" />
+                <Button layoutX="29.0" layoutY="13.0" mnemonicParsing="false" onAction="#switchToHome" styleClass="backButton" text="Back" />
+            </children>
+        </Pane>
+        <Pane id="Pane" layoutX="272.0" layoutY="106.0" prefHeight="450.0" prefWidth="450.0" styleClass="mainPane">
+            <children>
+                <Button fx:id="registerButton" layoutX="54.0" layoutY="332.0" prefWidth="342" styleClass="Button" text="Iniciar Sesión" />
+                <Label id="titleLabel" layoutX="148.0" layoutY="28.0" style="-fx-background-position: center;" styleClass="titleLabel" text="Iniciar Sesión" />
+                <Label layoutY="63.0" styleClass="subTitleLabel" text="Vuelve a tu espacio favorito" />
+                <Label layoutX="61.0" layoutY="127.0" text="Correo Electrónico" />
+                <Label layoutX="61.0" layoutY="225.0" text="Contraseña" />
+                <Label layoutX="172.0" layoutY="378.0" styleClass="termsLabel" text="¿No eres cliente?" />
+                <!-- Reemplaza el Label por un Button estilizado -->
+                <Button layoutX="190.0" layoutY="395.0" mnemonicParsing="false" onAction="#switchToRegister" styleClass="boldLabelButton" text="Regístrate" />
+                <TextField fx:id="emailField" layoutX="54.0" layoutY="158.0" promptText="Escribe tu correo" />
+                <TextField fx:id="passwordField" layoutX="54.0" layoutY="256.0" promptText="Escribe tu contraseña" />
             </children>
         </Pane>
     </children>

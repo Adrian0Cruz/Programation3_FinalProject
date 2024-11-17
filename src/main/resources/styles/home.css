@@ -1,7 +1,84 @@
-/*
- * Empty Stylesheet file.
- */
-
 .mainFxmlClass {
+    -fx-background-color: #f8f9fa;
+}
 
+.navigationBar {
+    -fx-background-color: #ffffff;
+    -fx-padding: 10px;
+    -fx-border-color: #ddd;
+    -fx-border-width: 0 0 1px 0;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+    -fx-alignment: center;
+    -fx-spacing: 10px;
+}
+
+.navLabel {
+    -fx-font-size: 16px;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.heroText {
+    -fx-text-fill: #ffffff;
+    -fx-font-size: 36px;
+    -fx-font-weight: bold;
+    -fx-text-alignment: center;
+}
+
+.bookingSectionNotRounded {
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+    -fx-padding: 20px;
+    -fx-spacing: 10px;
+}
+
+.bookingPaneRounded {
+    -fx-background-color: lightblue;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.bookingTitle {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.bookingSubtitle {
+    -fx-font-size: 14px;
+    -fx-font-weight: normal;
+    -fx-text-fill: #000000;
+}
+
+.bookingLabel {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #000000;
+}
+
+.bookingFieldRounded {
+    -fx-background-color: #ffffff;
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+.bookingField {
+    -fx-background-color: #ffffff;
+}
+
+.bookingSpinner {
+    -fx-pref-height: 32px;
+    -fx-pref-width: 48px;
+    -fx-border-color: #ddd;
+    -fx-background-color: #f0f0f0;
+    -fx-border-radius: 10px;
+    -fx-background-radius: 10px;
+}
+
+.bookingButton {
+    -fx-background-color: blue;
+    -fx-text-fill: white;
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-background-radius: 5px;
 }
